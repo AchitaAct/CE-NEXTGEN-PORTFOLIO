@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Niramit&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            z-index: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            background-color: black;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 20px;
+            gap: 20px;
+        }
+
+        .home {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .about {
+            color: black;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .cert {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .logo {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .text {
+            display: flex;
+            height: 100%;
+            color: #000;
+            font-family: Roboto Serif;
+            font-size: 64px;
+            padding-top: 150px;
+            padding-left: 400px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+
+        }
+
+        .circle {
+            width: 400px;
+            height: 400px;
+            border: 15px solid rgb(207, 207, 207);
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            background-image: url("IMG_4847.JPG");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .home {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .about {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+        }
+
+        .cert {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+
+        .home,
+        .about,
+        .cert {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .home:hover,
+        .about:hover,
+        .cert:hover {
+            background-color: white;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .about {
+            background-color: white;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            padding-top:30px;
+        }
+
+        .contact > a{
+            margin: 10px;
+        }
+
+        .obj {
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text_about1 {
+            color: black;
+            font-family: "Niramit";
+            font-size: 32px;
+        }
+
+        .text_about2 {
+            color: black;
+            font-family: "Niramit";
+            font-size: 20px;
+        }
+
+        @media screen and (max-width:768px) {
+            .obj {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .circle{
+                width: 300px;
+                height: 300px;
+            }
+
+            .text_about1{
+                font-size: 15px;
+                width: 100%;
+            }
+
+            .text_about2{
+                font-size: 10px;
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+        <div class="nav-bar">
+            <div class="logo">
+                <div>YUJI</div>
+            </div>
+            <div class="menu">
+                <a class="home" href="index.html">HOME</a>
+                <a class="about">ABOUT</a>
+                <a class="cert" href="cert.html">CERTIFICATE</a>
+            </div>
+        </div>
+        <div class="obj">
+            <div class="item">
+                <div class="circle"></div>
+            </div>
+            <div class="text_about">
+                <div class="text_about1">Achita Intakornudom
+                    <hr>
+                </div>
+                <div class="text_about2">Birthday : 21 oct 2006<br>Age : 17<br>Education : Samsnewittayalai
+                    School<br>Program Skill :<br>Photoshop , Premiere pro ,After effect , Vegas pro , Sketchup<br>Computer
+                    Language Skill :<br>CSS , JS , HTML , Python</div>
+                <hr>
+            </div>
+        </div>
+    
+        <div class="contact">
+            <a href="https://www.instagram.com/achita_inta/" target="_blank"><img src="instagram.png" alt="instagram"
+                    width="38"></a>
+            <a href="https://www.facebook.com/achita.intakornudom" target="_blank"><img src="facebook.png" alt="facebook"
+                    width="38"></a>
+            <a href="https://github.com/AchitaAct" target="_blank"><img src="github.png" alt="github" width="38"></a>
+        </div>
+    </div>
+</body>
+
+</html>

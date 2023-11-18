@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Niramit&family=Roboto+Serif:opsz@8..144&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            z-index: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            left: 0;
+            top: 0;
+            z-index: 2;
+            background-color: black;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-right: 20px;
+            gap: 20px;
+        }
+
+        .home {
+            color: black;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .about {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .cert {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+        }
+
+        .logo {
+            color: white;
+            font-family: "Bebas Neue";
+            font-size: 24px;
+            padding: 20px;
+        }
+
+        .text {
+            display: flex;
+            color: #000;
+            font-family: Roboto Serif;
+            font-size: 64px;
+            flex-direction: column;
+            justify-content: center ;
+        }
+
+        .item {
+            display: flex;
+            justify-content: center;
+        }
+
+        .item >div{
+            margin: 30px;
+        }
+
+        .circle {
+            width: 400px;
+            height: 400px;
+            border: 15px solid rgb(207, 207, 207);
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            background-image: url("IMG_4847.JPG");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .home,
+        .about,
+        .cert {
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .home:hover,
+        .about:hover,
+        .cert:hover {
+            background-color: white;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .home {
+            background-color: white;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            padding-top:30px;
+        }
+
+        .contact > a{
+            margin: 10px;
+        }
+        @media screen and (max-width:768px) {
+            .item {
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .circle{
+                width: 300px;
+                height: 300px;
+            }
+
+            .text{
+                font-size: 35px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="nav-bar">
+            <div class="logo">
+                <div>YUJI</div>
+            </div>
+            <div class="menu">
+                <a class="home">HOME</a>
+                <a class="about" href="about.html">ABOUT</a>
+                <a class="cert" href="cert.html">CERTIFICATE</a>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="text">Hi<br>I'm Yuji</div>
+            <div class="circle"></div>
+        </div>
+    </div>
+</body>
+
+</html>
